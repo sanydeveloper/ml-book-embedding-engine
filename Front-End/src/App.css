@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body {
+  background: rgb(0, 97, 45);
+  color: white;
+  font-family: 'poppins', sans-serif ;
+}
+
+.App{
+  min-height: 100vh;
+  display: flex;
+}
+
+.sidebar {
+  flex: 3;
+  border-right: 1px solid rgb(12, 53, 21);
+}
+
+.main {
+  flex: 9;
+}
+
+.logo {
+  margin-right: 1rem;
+}
+
+.brand {
+  font-size: 2rem;
+}
+
+.upperside {
+  padding: 2.5rem;
+  border-bottom: 1px solid rgb(12, 53, 21);
+  height: 70%;
+}
+
+.uppersidetop {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.uppersidetop>img {
+  width: 100px;
+}
+
+.addbtn{
+  height: 2rem;
+  padding-right: 1rem;
+  cursor: pointer;
+}
+
+.midbtn {
+  background: #339a54;
+  border: none;
+  width: 25rem;
+  color: white;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto; 
+  margin-bottom: 3rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.query {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  color: rgba(222,222,222,1);
+  padding: 1.5rem;
+  width: 25rem;
+  margin: 1 auto;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(12, 53, 21);
+}
+
+.query>img {
+  margin-right: 2rem;
+  object-fit: cover;
+  height: 1.75rem;
+}
+
+.lowerside {
+  padding: 2rem;
+}
+
+.listitems {
+  margin: 0.75rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+.listitemsimg {
+  margin: 1rem;
+  padding-right: 1rem;
+}
+
+.listitems:nth-child(1)>.listitemsimg {
+  margin-right: 0.5rem;
+}
+
+.listitems:nth-child(3)>.listitemsimg {
+  margin-right: 0.75rem;
+}
+
+
+.main {
+  min-height: calc(100vh -14rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 6rem 10rem;
+  margin-bottom: 0;
+}
+
+.chats {
+  overflow: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  width: 100%;
+  max-width: 70rem;
+  height: calc(100vh - 17rem);
+}
+
+.chat {
+  margin: 1rem ;
+  padding: 2rem 3rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: flex-start;
+  text-align: justify;
+}
+
+.chatimg {
+  object-fit: cover;
+  width: 3.5rem;
+  margin-right: 2rem;
+  border-radius: 0.5rem;
+}
+
+.bot {
+  background: rgb(17, 142, 57);
+  width: fit-content;
+  border-radius: 0.5rem;
+}
+
+.chatfooter{
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.inp{
+  padding: 0.5rem;
+  background: rgb(11, 60, 25);
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  width: 68rem;
+}
+
+.inp>input {
+  width: calc(100% - 3rem);
+  outline: none;
+  padding: 1.25rem;
+  color: white;
+}
+
+.inp>input, .send{
+  background: transparent;
+  border: none;
+}
+
+.send {
+  cursor: pointer;
+}
+
+.save-chat {
+  position: absolute; /* Positioning the button relative to the parent container */
+  top: -2rem; /* Distance from the top of the main chat area */
+  right: -4rem; /* Distance from the right of the main chat area */
+  background: #339a54;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.2rem;
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth hover effects */
+  z-index: 10; /* Ensures it stays on top of other elements */
+}
+
+.save-chat:hover {
+  background: #2a8645; /* Slightly darker green on hover */
+  transform: scale(1.05); /* Small zoom effect */
+}
+
+.save-chat:active {
+  background: #206634; /* Darker green on click */
+  transform: scale(0.95); /* Shrink effect on click */
+}
+
+.main {
+  position: relative; /* Makes the main container a positioning context */
+}
+
+
+
+.chatfooter>p{ 
+  margin: 2rem 0;
+}
